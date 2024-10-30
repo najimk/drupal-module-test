@@ -1,8 +1,8 @@
 name: mrm-module-test
-recipe: drupal9
+recipe: drupal10
 
 config:
-  php: '7.4'
+  php: '8.1'
   via: nginx
   webroot: web
   drush: "*"

@@ -1,5 +1,5 @@
 <?php
-$settings['hash_salt'] = 'cIOaW-J7Ni5aHPmMvD0yhIh7ZkQ3xZoBrBPIA7E-1qZSPri2f94Nf-H4-yEKFbKwo4ehpoURYQ';
+$settings['hash_salt'] = 'pTkb8V0q2pctnVsQ0sWnuzm70Vbp5iBlqwwbOWlZsz6DXssw4G4nZJ550WE7vdx3Mk8BesqNYA';
 
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.services.yml';
@@ -9,12 +9,13 @@ $settings['entity_update_backup'] = TRUE;
 
 $settings['config_sync_directory'] = '../config/sync';
 $databases['default']['default'] = array (
-  'database' => 'drupal9',
-  'username' => 'drupal9',
-  'password' => 'drupal9',
+  'database' => 'drupal10',
+  'username' => 'drupal10',
+  'password' => 'drupal10',
   'prefix' => '',
   'host' => 'database',
   'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
 );
@@ -29,3 +30,10 @@ $config['system.performance']['js']['preprocess'] = FALSE;
 
 $config['system.logging']['error_level'] = 'verbose';
 $settings['file_private_path'] = '/app/web/sites/default/private';
+$settings['file_temp_path'] = '/tmp';
+
+$settings['trusted_host_patterns'] = [
+  '^localhost$',
+  '127\.0\.0\.1',
+  '^mrm-module-test\.lndo\.site$'
+];

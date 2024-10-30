@@ -1,6 +1,6 @@
 {
     "name": "mantaraymedia/drupal-module-test",
-    "description": "Base Drupal 9 repo for module development",
+    "description": "Base Drupal 10 repo for module development",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -17,16 +17,15 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/admin_toolbar": "^2.4",
-        "drupal/adminimal_theme": "^1.6",
-        "drupal/bootstrap4": "^2.1",
-        "drupal/core": "^9.4",
-        "drupal/core-composer-scaffold": "^9.4",
-        "drupal/core-project-message": "^9.4",
-        "drupal/field_group": "3.x-dev",
-        "drupal/twig_tweak": "^2.5",
-        "drupal/viewfield": "^3.0",
-        "drush/drush": "^11.3"
+        "drupal/admin_toolbar": "^v3.4.2",
+        "drupal/bootstrap5": "^4.0",
+        "drupal/core-composer-scaffold": "^10.1",
+        "drupal/core-project-message": "^10.1",
+        "drupal/core-recommended": "^10.1",
+        "drupal/field_group": "^3.4",
+        "drupal/gin": "^3.0@RC",
+        "drupal/twig_tweak": "^3.2",
+        "drush/drush": "^12.4"
     },
     "conflict": {
         "drupal/drupal": "*"
