@@ -1,0 +1,7 @@
+fun_time.funtime:
+  path: "/funtime"
+  defaults:
+    _controller: '\Drupal\fun_time\Controller\Funtime::content'
+    _title: "Fun Time"
+  requirements:
+    _permission: "access content"
