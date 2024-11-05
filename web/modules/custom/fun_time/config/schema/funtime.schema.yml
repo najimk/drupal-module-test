@@ -1,0 +1,7 @@
+funtime.configurations:
+  type: config_object
+  label: Funtime Configuration Settings
+  mapping:
+    configurations:
+      title:
+      description:

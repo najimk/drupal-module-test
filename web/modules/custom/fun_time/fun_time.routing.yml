@@ -5,3 +5,12 @@ fun_time.funtime:
     _title: "Fun Time"
   requirements:
     _permission: "access content"
+
+# create a route for the configuration page
+fun_time.configuration:
+  path: "/admin/config/funtime"
+  defaults:
+    _form: '\Drupal\fun_time\Form\FuntimeConfig'
+    _title: Fun Time Configuration
+  requirements:
+    _permission: access content
