@@ -1,0 +1,6 @@
+fun_time.configpage_link:
+  title: Funtime Configuration
+  description: This is to help you manage funtime module configuration
+  route_name: fun_time.configuration
+  parent: system.admin_config_content
+  weight: 10

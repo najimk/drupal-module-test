@@ -1,0 +1,5 @@
+funtimejs:
+  js:
+    js/funtime.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,5 @@
+services:
+  fun_time.twig_extension:
+    class: Drupal\fun_time\TwigExtension\CamelCase
+    tags:
+      - { name: twig.extension }

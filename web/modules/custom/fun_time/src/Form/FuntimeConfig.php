@@ -51,7 +51,7 @@ class FuntimeConfig extends ConfigFormBase
     ];
 
     $form['description'] = [
-      '#type' => 'textfield',
+      '#type' => 'textarea',
       '#title' => $this->t('Admin description'),
       '#description' => $this->t('Please provide a description here.'),
       '#required' => TRUE,

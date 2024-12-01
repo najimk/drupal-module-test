@@ -1,0 +1,10 @@
+{# funtime twig template
+<h1> 	{{ title }} </h1>
+#}
+<p>
+	{% if is_admin %}
+		{{ description|camel_string }}
+	{% else %}
+		You should login to see creation of the 'fun_time' module :)
+	{% endif %}
+</p>

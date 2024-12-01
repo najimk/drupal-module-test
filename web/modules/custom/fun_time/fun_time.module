@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Custom functionality via hooks will be added here..
+ */
+
+function fun_time_page_attachments(array &$attachments)
+{
+  // load the the current user object
+  $current = \Drupal::currentUser();
+  $user = \Drupal\user\Entity\User::load($current->id());
+
+  // Conditionally attach the js asset for users with "Limited" roles.
+  if ($user->hasRole('limited')) {
+    $attachments['#attached']['library'][] = 'fun_time/funtimejs';
+  }
+}
+
+/**
+ * Implement a hook_theme
+ */
+
+function fun_time_theme($existing, $type, $theme, $path)
+{
+  return [
+    'funtime' => [
+      'variables' => [
+        'title' => '',
+        'description' => ''
+      ],
+    ],
+  ];
+}
